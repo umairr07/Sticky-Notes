@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sticky Notes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .newButton {
+        background-color: white;
+        height: 30px;
+        width: 30px;
+        margin-top: 32px;
+        border-radius: 50%;
+      }
+
+      .editButton {
+        background-color: white;
+        height: 30px;
+        width: 30px;
+        margin-top: 32px;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-500">
+    <header>
+      <h1 class="font-bold text-3xl text-center text-white">Sticky Notes</h1>
+    </header>
+    <div id="container" class="flex">
+      <div id="left-con" class="w-80 bg-cyan-400 m-10 p-2">
+        <div id="top" class="flex justify-around">
+          <input
+            type="text"
+            name=""
+            id="titel"
+            placeholder="Title"
+            required
+            class="border-black border-2 p-1"
+          />
+          <input type="color" name="" id="color" />
+        </div>
+        <div id="bottom" class="flex flex-col">
+          <textarea
+            name=""
+            id="text"
+            cols="30"
+            rows="10"
+            placeholder="Add a text.."
+            class="m-3 p-2"
+          ></textarea>
+          <button id="buttn" class="bg-white w-32 m-auto p-1">Add note</button>
+        </div>
+      </div>
+
+      <div id="right-con" class="mt-10 ml-10 flex gap-5"></div>
+
+      <div id="div2" class="">
+        <p id="pDate"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
